@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UrunlerController">
+   <children>
+      <TableView fx:id="tblUrun" layoutX="37.0" layoutY="24.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colSilahAdi" prefWidth="106.40002286434174" text="Silah Adı" />
+          <TableColumn fx:id="colAciklama" prefWidth="121.59998321533203" text="Açıklama" />
+            <TableColumn fx:id="colStok" prefWidth="74.4000244140625" text="Stok Miktari" />
+            <TableColumn fx:id="colFiyat" prefWidth="100.7999267578125" text="Fiyat" />
+            <TableColumn fx:id="colEkle" prefWidth="96.800048828125" text="Ekle" />
+        </columns>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

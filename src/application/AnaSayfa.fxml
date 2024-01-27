@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorTum" prefHeight="500.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnaSayfaController">
+   <children>
+      <AnchorPane fx:id="anchorSol" layoutY="-3.0" prefHeight="506.0" prefWidth="170.0" style="-fx-background-color: pink;">
+         <children>
+            <VBox layoutX="24.0" layoutY="3.0" prefHeight="503.0" prefWidth="170.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <children>
+                  <HBox prefHeight="118.0" prefWidth="170.0">
+                     <children>
+                        <ImageView fitHeight="174.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Downloads/pngwing.com.png" />
+                           </image>
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color opacity="0.4000000059604645" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnAnaSayfa" mnemonicParsing="false" onAction="#btnAnaSayfaOnClick" prefHeight="40.0" prefWidth="170.0" text="Ana Sayfa">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+                  <Button fx:id="btnSepetim" layoutX="10.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnSepetimOnClick" prefHeight="40.0" prefWidth="170.0" text="Sepetim">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+                  <Button fx:id="btnSatınAldiklarim" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnSatınAldiklarimOnClick" prefHeight="40.0" prefWidth="170.0" text="Satın Aldıklarım">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+                  <Button fx:id="btnUrunler" layoutX="10.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnUrunlerOnClick" prefHeight="40.0" prefWidth="170.0" text="Ürünler">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+                  <Button fx:id="bttnCikisYap" layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnCikisYapOnClick" prefHeight="40.0" prefWidth="170.0" text="Çıkış Yap">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+                  <Button fx:id="btnAdmin" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnAdminOnClick" prefHeight="40.0" prefWidth="170.0" text="Admin">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color opacity="0.20000000298023224" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color></InnerShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorSag" layoutX="169.0" layoutY="-3.0" prefHeight="506.0" prefWidth="500.0" style="-fx-background-color: lightblue;">
+         <children>
+            <AnchorPane layoutX="-6.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0" />
+         </children>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color></InnerShadow>
+         </effect></AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color opacity="0.4000000059604645" />
+         </color></InnerShadow>
+   </effect>
+</AnchorPane>

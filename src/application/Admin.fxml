@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <TableView fx:id="tblAdmin" layoutX="91.0" layoutY="71.0" onMouseClicked="#tblAdminOnClick" prefHeight="303.0" prefWidth="500.0" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="colUrunId" prefWidth="75.0" text="Ürün No" />
+          <TableColumn fx:id="colSilahAdi" prefWidth="127.19995880126953" text="Silah Adı" />
+          <TableColumn fx:id="colAciklama" prefWidth="154.4000244140625" text="Açıklama" />
+            <TableColumn fx:id="colFiyat" prefWidth="69.5999755859375" text="Fiyat" />
+            <TableColumn fx:id="colStok" prefWidth="73.60003662109375" text="Stok" />
+        </columns>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TableView>
+      <Label layoutX="40.0" layoutY="352.0" text="Silah Adı:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="384.0" text="Açıklama:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="421.0" text="Fiyat:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="456.0" text="Stok:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSilahAd" layoutX="126.0" layoutY="350.0" promptText="Silah Adı giriniz...">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <TextField fx:id="txtAciklama" layoutX="126.0" layoutY="382.0" promptText="Açıklama giriniz...">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <TextField fx:id="txtFiyat" layoutX="126.0" layoutY="418.0" promptText="Fiyat giriniz...">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <TextField fx:id="txtStok" layoutX="126.0" layoutY="453.0" promptText="Stok giriniz...">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <Button fx:id="btnEkle" layoutX="376.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnEkleOnClick" prefHeight="30.0" prefWidth="98.0" text="Ekle">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnGuncelle" layoutX="376.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnGuncelleOnClick" prefHeight="30.0" prefWidth="98.0" text="Güncelle">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnSeciliSil" layoutX="376.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnSeciliSilOnClick" prefHeight="30.0" prefWidth="98.0" text="Seçiliyi Sil">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+      <Label layoutX="41.0" layoutY="326.0" text="Ürün No:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUrunId" disable="true" layoutX="126.0" layoutY="323.0" promptText="Stok giriniz...">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.4000000059604645" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+   </children>
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color opacity="0.4000000059604645" />
+         </color>
+      </InnerShadow>
+   </effect>
+</AnchorPane>
